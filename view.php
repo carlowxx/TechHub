@@ -20,12 +20,13 @@ if ($id < 0) header ('Location: 404.php');
 $sql= <<<SQL
 
 SELECT 
-	product_id, product_name, product_content , product_price, product_seller
+	product_id, product_name, product_content , product_price, product_seller, product_views
 FROM
 	product
 WHERE 
 product_id = '{$id}'
 AND product_status = 'on';
+
 
 SQL;
 
