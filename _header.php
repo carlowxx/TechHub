@@ -17,6 +17,7 @@ if (isset($page['js']))
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/img/logo01.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/global.css">
     <?php
@@ -68,9 +69,8 @@ if (isset($page['js']))
                 <ion-icon name="people-circle-outline" size="large"></ion-icon>
             </a>
             <a id="userAccess" href="login.php" title="Logue-se">
-                
-                <ion-icon id="userIcon" name="enter-outline" size="large"></ion-icon>
                 <span id="userLabel">Entrar</span>
+                <ion-icon id="userIcon" name="enter-outline" size="large"></ion-icon>
                 <img id="userImg" src="assets/img/logo02.png" alt="Login de usuário" referrerpolicy="no-referrer">
             </a>
         </div>
