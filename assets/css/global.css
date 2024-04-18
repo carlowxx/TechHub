@@ -14,12 +14,20 @@ body {
     line-height: 1.3;
     color: rgb(0, 0, 0);
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #ffffff;
     background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
+
+
+
 
 /* Elementos de uso geral */
 a {
@@ -38,21 +46,32 @@ header img {
 }
 
 header {
-    
+
     padding-bottom: 30px;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
+}
+main {
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-header>i{
+main article {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+header>i {
     padding: 2rem;
     font-size: 2rem;
     margin-top: 1.8rem;
 }
-header>i:hover{
+
+header>i:hover {
     cursor: pointer;
 }
 
@@ -144,7 +163,7 @@ header>i:hover{
 }
 
 .nav {
-    
+
     width: 16rem;
     height: 100%;
     position: absolute;
@@ -155,6 +174,11 @@ header>i:hover{
     transition: transform 0.2s;
     overflow: hidden;
 
+}
+
+.nav a img {
+    width: 2rem;
+    border-radius: 50%;
 }
 
 .nav-close {
@@ -183,14 +207,7 @@ header>i:hover{
     font-size: 1.3rem;
 }
 
-.nav__link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 25px;
-    text-decoration: none;
-    color: #dddddd;
-  }
+
 
 .nav__text {
     padding: 2rem;
@@ -212,14 +229,16 @@ header>i:hover{
 }
 
 footer {
+  
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
     background-color: rgb(0, 0, 0);
-    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
+    position: absolute;
 }
 
 footer div {
@@ -228,6 +247,7 @@ footer div {
 }
 
 footer a {
+    margin: 1.4rem;
     color: white;
 }
 
@@ -236,15 +256,15 @@ footer a {
 }
 
 
-    #wrap {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-    }
+#wrap {
+    
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
 
 
 main {
@@ -255,14 +275,14 @@ main {
 }
 
 main article {
-    
+
     flex-grow: 1;
     background-color: rgb(216, 216, 216);
 }
 
-article {
-    padding: 5rem;
-}
+
+
+
 
 /* Elementos de formulários */
 input,
@@ -271,6 +291,7 @@ button {
     font-family: inherit;
     font-size: inherit;
 }
+
 
 /* Estilos gerais para dispositivos móveis (mobile-first) */
 
@@ -281,11 +302,12 @@ button {
     /* Estilos específicos para dispositivos móveis */
 
     body {
-        padding-bottom: 50px; /* Adicione o valor que for necessário para o espaço do footer */
+        padding-bottom: 50px;
+        /* Adicione o valor que for necessário para o espaço do footer */
     }
 
     header {
-        
+
         flex-direction: column;
         align-items: center;
     }
@@ -335,9 +357,78 @@ button {
         /* Aumenta o preenchimento */
     }
 
-    footer {
-        flex-direction: column;
-        align-items: center;
+   
+        footer {
+            flex-direction: row;
+            margin-bottom: 0%;
         
+}
+    }
+
+@media screen and (max-width: 425px) {
+    header {
+        display: flex;
+        padding-bottom: 0;
+        order: 1;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .header-logo {
+        order: 1;
+        max-width: 18rem;
+        max-height: 5rem;
+        width: 100%;
+        height: auto;
+        margin-right: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    .header-search {
+        order: 2;
+        max-width: 90%;
+        margin-left: 1rem;
+    }
+
+    .header-menu-icon {
+        order: 1;
+        font-size: 2rem;
+        max-width: 20%;
+        margin-left: 1.5rem;
+        padding: 0;
+    }
+
+    /* nav menu */
+
+    .nav {
+        width: 100%;
+        height: 20rem;
+        transform: translateX(-30rem);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(0, 0, 0);
+        transition: transform 0.2s;
+        overflow: auto;
+    }
+
+    .nav-open main {
+        transform: none;
+    }
+    .nav-links-container {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-links-container a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem .9rem;
+        text-decoration: none;
+        color: #dddddd;
+    }
+    .nav-links-container a span {
+        font-size: .8rem;
+        padding: 0.2rem;
     }
 }
