@@ -32,5 +32,5 @@ require("_header.php");
     <h2>Conheça os Criadores</h2>
     <p>Nosso site foi criado por <a href="https://github.com/carlowxx"><b>Carlos Henrique</b></a>, <a href="https://github.com/MarlonMessias01"><b>Marlon Messias</b></a>, <a href="https://github.com/fellype-sts"><b>Fellype Siqueira</b></a>. Estamos aqui para fornecer a melhor experiência possível para todos os gamers!</p>
 </article>
-
+ 
 <?php require("_footer.php"); ?>
