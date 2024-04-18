@@ -148,7 +148,7 @@ VALUES
     
     <figure>
     <img src="https://m.media-amazon.com/images/I/61UxfXTUyvL._AC_SX679_.jpg"> 
-    <figcaption>Imagem aleatória.</figcaption>
+    
     </figure>
     
     ',
@@ -169,7 +169,7 @@ VALUES
     
     <figure>
     <img src="https://m.media-amazon.com/images/I/71Nqzh-u2rL._AC_SX679_.jpg">
-    <figcaption>Imagem aleatória.</figcaption>
+    
     </figure>
     
     ',
@@ -190,7 +190,7 @@ VALUES
     
     <figure>
     <img src="https://m.media-amazon.com/images/I/51Cu-Uh2WrL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="Imagem qualquer">    
-    <figcaption>Imagem aleatória.</figcaption> 
+    
     </figure>
     
     ',

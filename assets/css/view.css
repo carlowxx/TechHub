@@ -122,7 +122,18 @@
 #commentForm:invalid textarea {
   background-color: rgb(255, 230, 230);
 }
-
+.link {
+  margin: 2rem 4rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 7rem;
+  background-color: #000;
+  justify-content: center;
+  color:#ddd;
+}
+.link a{
+  color: rgb(255, 255, 255);
+}
 @media screen and (min-width: 768px) {
   .article small {
       text-align: right;
@@ -199,13 +210,13 @@ p {
 }
 
 .price {
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
   font-size: 21px;
   font-weight: bold;
   color: #000000; /* Cor azul para o preço */
   margin-bottom: 10px;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 #rattingSystem,
